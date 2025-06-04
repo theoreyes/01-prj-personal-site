@@ -1,1 +1,83 @@
-/* Add you CSS here */
+/* Theodore Reyes
+*  Style CSS for portfolio web page
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f4f8; /* Light grey background */
+  color: #222; /* Darker text for contrast */
+}
+
+nav {
+  /* Reduced padding to make the nav bar smaller */
+  background-color: #1e3a5c; /* Dark blue */
+  color: white;
+  padding: 0.5rem; /* Smaller padding for a smaller nav bar */
+  text-align: center;
+}
+
+/* Style the navigation menu to center items horizontally */
+nav ul {
+  display: flex; /* Arrange list items in a row */
+  justify-content: center; /* Center the items horizontally */
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+nav li {
+  margin: 0 15px; /* Add space between items */
+}
+
+/* Remove underline from nav links and add a hover effect */
+nav a {
+  text-decoration: none; /* No underline on links */
+  color: white; /* Keep links white */
+  padding: 4px 8px; /* Small padding for easier hover */
+  border-radius: 4px; /* Rounded corners for hover effect */
+  transition: background 0.2s, color 0.2s; /* Smooth transition */
+}
+
+nav a:hover {
+  background-color: #365b85; /* Slightly lighter blue on hover */
+  color: #e3eaf2; /* Light blue-grey text on hover */
+}
+
+section {
+  padding: 2rem;
+  border-bottom: 1px solid #b0b8c1; /* Light grey border */
+}
+
+.picture-section {
+  background-color: #e3eaf2; /* Very light blue-grey */
+}
+
+.skills-section {
+  background-color: #c9d6e3; /* Light blue-grey */
+}
+
+.projects-section {
+  background-color: #b0c4d9; /* Muted blue-grey */
+}
+
+.flavor-section {
+  background-color: #7fa1c6; /* Medium blue */
+  color: white;
+}
+
+.contact-section {
+  background-color: #4a6fa5; /* Strong blue */
+  color: white;
+}
+
+footer {
+  background-color: #1e3a5c; /* Match nav dark blue */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Center all h2 headings on the page */
+h2 {
+  text-align: center;
+}
