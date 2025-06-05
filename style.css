@@ -6,13 +6,17 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #e5e7eb; /* Sleek light grey background */
   color: #222831; /* Dark grey text for good contrast */
+  background: #32394b;
+}
+
+p {
+  font-size: 1.1em;
 }
 
 nav {
   /* Reduced padding to make the nav bar smaller */
-  background-color: #23272f; /* Darker grey for nav */
+  background-color: #1C2631; /* Darker grey for nav */
   color: #f3f3f3; /* Light text for contrast */
   padding: 0.5rem; /* Smaller padding for a smaller nav bar */
   text-align: center;
@@ -33,10 +37,10 @@ nav li {
 /* Remove underline from nav links and add a hover effect */
 nav a {
   text-decoration: none; /* No underline on links */
-  color: #f3f3f3; /* Keep links white */
   padding: 4px 8px; /* Small padding for easier hover */
   border-radius: 4px; /* Rounded corners for hover effect */
   transition: background-color 0.2s, color 0.2s; /* Smooth transition */
+  font-size: 1.6em; /* Slightly larger text for better readability */
 }
 
 nav a:hover {
@@ -46,25 +50,26 @@ nav a:hover {
 
 section {
   padding: 2rem;
-  border-bottom: 1px solid #b0b8c1; /* Light grey border */
-  background-color: #f3f4f6; /* Slightly lighter grey for sections */
-  color: #222831; /* Ensure text is dark for contrast */
+  background: transparent;
+  color: #f3f3f3; /* Light text for contrast */
 }
 
 .picture-section {
-  background-color: #d1d5db; /* Medium-light grey for picture section */
+  background: transparent;
+  padding-bottom: 0px;
 }
 
 /* Make the name in the picture section larger and bold */
 .picture-section h2 {
   font-size: 2.5rem;      /* Make the text bigger */
   font-weight: bold;    /* Make the text bold */
-  margin: 0.5rem 0.5rem;   /* Add a little space above */
+  margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 .skills-section {
-  background-color: #cbd5e1; /* Subtle blue-grey for skills */
-  color: #222831; /* Dark text for contrast */
+  background: transparent;
+  color: #f3f3f3; 
 }
 
 .skills-section p {
@@ -77,33 +82,40 @@ section {
   display: flex; /* Use flexbox for layout */
   justify-content: center; /* Center the skills horizontally */
   flex-wrap: wrap; /* Allow skills to wrap to the next line */
+  background: transparent;
+  max-width: 700px; /* Limit how wide the row can be */
+  margin: 0 auto;   /* Center the row on the page */
 }
 
-.skills-row img {
+.skills-row svg {
   width: 100px; /* Set a fixed width for each skill icon */
   height: 100px; /* Set a fixed height for each skill icon */
   margin: 10px; /* Add space around each icon */
-  border-radius: 50%; /* Make the icons round */
-  object-fit: cover; /* Crop the image to fill the circle */
 }
 
 .projects-section {
-  background-color: #e0e7ef; /* Light blue-grey for projects */
-  color: #222831;
+  background: transparent;
+  color: #f3f3f3; 
 }
 
-.flavor-section {
-  background-color: #374151; /* Sleek dark blue-grey */
+.projects-section p {
+  text-align: center; /* Center the paragraph text */
+  margin: 0 auto; /* Center the paragraph */
+  max-width: 600px; /* Limit width for better readability */
+}
+
+.personal-section {
+  background: transparent;
   color: #f3f3f3; /* Light text for contrast */
 }
 
 .contact-section {
-  background-color: #23272f; /* Match nav dark grey */
+  background: transparent;
   color: #f3f3f3;
 }
 
 footer {
-  background-color: #23272f; /* Match nav dark grey */
+  background: transparent;
   color: #f3f3f3;
   text-align: center;
   padding: 1rem;
@@ -129,8 +141,26 @@ section h2 {
   margin: 0 auto 1rem;    /* Center the image and add space below */
 }
 
+.about-section {
+  background: transparent;
+  color: #f3f3f3; /* Light text for contrast */
+}
+
 .about-section p {
   text-align: center; /* Center the paragraph text */
   margin: 0 auto;
   max-width: 600px; /* Limit width for better readability */
+}
+
+.gen-text {
+  color: #f3f3f3;
+  font-family: 'Fira Code', monospace;
+}
+
+.sec-hd {
+  width: 400px;
+  background: #4f576d;
+  border-radius: 10px;
+  margin-left: auto; /* Center the element horizontally */
+  margin-right: auto; /* Center the element horizontally */
 }
