@@ -2,17 +2,18 @@
 *  Style CSS for portfolio web page
 */
 
+/* Change the backgrounds to be more grey and sleek, and update text color for contrast */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f0f4f8; /* Light grey background */
-  color: #222; /* Darker text for contrast */
+  background-color: #e5e7eb; /* Sleek light grey background */
+  color: #222831; /* Dark grey text for good contrast */
 }
 
 nav {
   /* Reduced padding to make the nav bar smaller */
-  background-color: #1e3a5c; /* Dark blue */
-  color: white;
+  background-color: #23272f; /* Darker grey for nav */
+  color: #f3f3f3; /* Light text for contrast */
   padding: 0.5rem; /* Smaller padding for a smaller nav bar */
   text-align: center;
 }
@@ -32,10 +33,10 @@ nav li {
 /* Remove underline from nav links and add a hover effect */
 nav a {
   text-decoration: none; /* No underline on links */
-  color: white; /* Keep links white */
+  color: #f3f3f3; /* Keep links white */
   padding: 4px 8px; /* Small padding for easier hover */
   border-radius: 4px; /* Rounded corners for hover effect */
-  transition: background 0.2s, color 0.2s; /* Smooth transition */
+  transition: background-color 0.2s, color 0.2s; /* Smooth transition */
 }
 
 nav a:hover {
@@ -46,33 +47,64 @@ nav a:hover {
 section {
   padding: 2rem;
   border-bottom: 1px solid #b0b8c1; /* Light grey border */
+  background-color: #f3f4f6; /* Slightly lighter grey for sections */
+  color: #222831; /* Ensure text is dark for contrast */
 }
 
 .picture-section {
-  background-color: #e3eaf2; /* Very light blue-grey */
+  background-color: #d1d5db; /* Medium-light grey for picture section */
+}
+
+/* Make the name in the picture section larger and bold */
+.picture-section h2 {
+  font-size: 2.5rem;      /* Make the text bigger */
+  font-weight: bold;    /* Make the text bold */
+  margin: 0.5rem 0.5rem;   /* Add a little space above */
 }
 
 .skills-section {
-  background-color: #c9d6e3; /* Light blue-grey */
+  background-color: #cbd5e1; /* Subtle blue-grey for skills */
+  color: #222831; /* Dark text for contrast */
+}
+
+.skills-section p {
+  text-align: center; /* Center the paragraph text */
+  margin: 0 auto; /* Center the paragraph */
+  max-width: 600px; /* Limit width for better readability */
+}
+
+.skills-row {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the skills horizontally */
+  flex-wrap: wrap; /* Allow skills to wrap to the next line */
+}
+
+.skills-row img {
+  width: 100px; /* Set a fixed width for each skill icon */
+  height: 100px; /* Set a fixed height for each skill icon */
+  margin: 10px; /* Add space around each icon */
+  border-radius: 50%; /* Make the icons round */
+  object-fit: cover; /* Crop the image to fill the circle */
 }
 
 .projects-section {
-  background-color: #b0c4d9; /* Muted blue-grey */
+  background-color: #e0e7ef; /* Light blue-grey for projects */
+  color: #222831;
 }
 
 .flavor-section {
-  background-color: #7fa1c6; /* Medium blue */
-  color: white;
+  background-color: #374151; /* Sleek dark blue-grey */
+  color: #f3f3f3; /* Light text for contrast */
 }
 
 .contact-section {
-  background-color: #4a6fa5; /* Strong blue */
-  color: white;
+  background-color: #23272f; /* Match nav dark grey */
+  color: #f3f3f3;
 }
 
 footer {
-  background-color: #1e3a5c; /* Match nav dark blue */
-  color: white;
+  background-color: #23272f; /* Match nav dark grey */
+  color: #f3f3f3;
   text-align: center;
   padding: 1rem;
 }
@@ -80,4 +112,25 @@ footer {
 /* Center all h2 headings on the page */
 h2 {
   text-align: center;
+}
+
+/* Move h2 headings closer to the top of each section, except the picture section */
+section h2 {
+  margin-top: 0.5rem; /* Less space above the heading */
+}
+
+/* Style the profile picture to be a small circle */
+#profile-picture {
+  width: 260px;           /* Make the image smaller */
+  height: 260px;          /* Set height to match width for a perfect circle */
+  object-fit: cover;      /* Crop the image to fill the circle */
+  border-radius: 50%;     /* Make the image round */
+  display: block;         /* Remove extra space below the image */
+  margin: 0 auto 1rem;    /* Center the image and add space below */
+}
+
+.about-section p {
+  text-align: center; /* Center the paragraph text */
+  margin: 0 auto;
+  max-width: 600px; /* Limit width for better readability */
 }
