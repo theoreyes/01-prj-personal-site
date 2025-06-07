@@ -5,14 +5,14 @@
 */
 
 const projects = [
-  {title: "Lightbulb Social Media Website",
+  {title: "💡 Lightbulb Social Media Website",
    desc: "A collaborative proof-of-concept social media website with features like user profiles " +
          "posts, and comments [Site is not currently being hosted]",
    link: "https://github.com/HunterRundhaug/Lightbulb_337"
   },
-  {title: "LeetCode Problems",
+  {title: "🚀 LeetCode Problems",
     desc: "A collection of my solutions to various LeetCode problems, all including short " +
-          "explanations of my thought processes and reasonings. Updated frequently!",
+          "explanations of my thought process and reasoning. Updated frequently!",
     link: "https://github.com/theoreyes/leetcode_problems"
   }
 ]

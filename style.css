@@ -85,6 +85,7 @@ section {
   background: transparent;
   max-width: 700px; /* Limit how wide the row can be */
   margin: 0 auto;   /* Center the row on the page */
+  padding-bottom: 0;
 }
 
 .skills-row svg {
@@ -111,7 +112,13 @@ section {
 
 .contact-section {
   background: transparent;
+  text-align: center;
   color: #f3f3f3;
+}
+
+.contact-section img {
+  height: 100px;
+  margin: 10px;
 }
 
 footer {
@@ -144,6 +151,7 @@ section h2 {
 .about-section {
   background: transparent;
   color: #f3f3f3; /* Light text for contrast */
+  padding-bottom: 0;
 }
 
 .about-section p {
@@ -164,3 +172,65 @@ section h2 {
   margin-left: auto; /* Center the element horizontally */
   margin-right: auto; /* Center the element horizontally */
 }
+
+.projects-section {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.projects-section p {
+  margin-bottom: 10px;
+}
+
+.projects-section a {
+  color: #f3f3f3; /* Light text for contrast */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make links stand out */
+  font-size: 1.4em;
+  background: #535b72;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+
+.projects-section h3 {
+  font-size: 1.4em;
+  border-radius: 7px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  background: #484e64;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+.projects-section a:hover {
+  background-color: #364885; /* Lighter blue on hover */
+  color: #e3eaf2; /* Light blue-grey text on hover */
+}
+
+.projects-row {
+  display: flex; /* Use flexbox to arrange project cards in a row */
+  flex-direction: column; /* Stack project cards vertically */
+  align-items: center; /* Center the project cards horizontally */
+  padding: 14px;
+}
+
+.project-item {
+  background: #5f6984; /* Dark grey background for project items */
+  border-radius: 10px; /* Rounded corners */
+  max-width: 600px; /* Limit the width of each project item */
+  padding: 1rem; /* Padding inside each project item */
+  margin: 10px; /* Space between project items */
+  transition: transform 0.2s; /* Smooth scaling effect on hover */
+  width: 100%; /* Make the card take full width up to max-width */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.contact-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
