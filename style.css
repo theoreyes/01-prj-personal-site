@@ -177,8 +177,13 @@ section h2 {
   width: 400px;
   background: #4f576d;
   border-radius: 10px;
+  font-size: 1.7rem;
   margin-left: auto; /* Center the element horizontally */
   margin-right: auto; /* Center the element horizontally */
+}
+
+.sec-hd h2 {
+  font-size: 2.0rem;
 }
 
 .projects-section {
