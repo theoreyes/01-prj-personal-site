@@ -2,8 +2,13 @@
 *  Style CSS for portfolio web page
 */
 
+html {
+  scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
 /* Change the backgrounds to be more grey and sleek, and update text color for contrast */
 body {
+  transform: 0.8;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #222831; /* Dark grey text for good contrast */
@@ -114,10 +119,12 @@ section {
   background: transparent;
   text-align: center;
   color: #f3f3f3;
+  padding-bottom: 0px;
 }
 
-.contact-section img {
+.contact-section svg {
   height: 100px;
+  width: 100px;
   margin: 10px;
 }
 
@@ -151,6 +158,7 @@ section h2 {
 .about-section {
   background: transparent;
   color: #f3f3f3; /* Light text for contrast */
+  padding-top: 6px;
   padding-bottom: 0;
 }
 
@@ -187,7 +195,7 @@ section h2 {
   text-decoration: none; /* Remove underline */
   font-weight: bold; /* Make links stand out */
   font-size: 1.4em;
-  background: #535b72;
+  background: #484e64;
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 5px;
@@ -200,13 +208,13 @@ section h2 {
   padding-left: 5px;
   margin-top: 4px;
   margin-bottom: 8px;
-  background: #484e64;
+  background: #394053;
   transition: background-color 0.3s, color 0.3s;
   display: inline-block;
 }
 
 .projects-section a:hover {
-  background-color: #364885; /* Lighter blue on hover */
+  background-color: #2f3f73; /* Lighter blue on hover */
   color: #e3eaf2; /* Light blue-grey text on hover */
 }
 
@@ -218,7 +226,7 @@ section h2 {
 }
 
 .project-item {
-  background: #5f6984; /* Dark grey background for project items */
+  background: #505a73; /* Dark grey background for project items */
   border-radius: 10px; /* Rounded corners */
   max-width: 600px; /* Limit the width of each project item */
   padding: 1rem; /* Padding inside each project item */
@@ -234,3 +242,16 @@ section h2 {
   flex-wrap: wrap;
 }
 
+.contact-items img {
+  height: 80px;
+  padding: 12px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background: #74809f;
+  border-radius: 30px; 
+}
+
+.contact-items img:hover {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+  transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
